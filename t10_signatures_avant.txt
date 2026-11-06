@@ -1,0 +1,8 @@
+﻿         satellite          | zeilen | aktuell |             signatur             
+----------------------------+--------+---------+----------------------------------
+ sat_geography_nuts_mapping |    401 |     401 | 6d6ed5f27566dc335e90abedb9462f42
+ sat_eurostat_unemployment  |  13243 |   13243 | 1cb3c6d486aa9a10c0ab8b4814332673
+ fact_labour_market         | 216149 |         | 723285a71f684403e6108463cea38e91
+ sat_ba_labour_market       |  94636 |   94636 | 8b11e9a64ab614d8e10ac6519001b4b5
+(4 rows)
+

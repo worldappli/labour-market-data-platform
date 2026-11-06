@@ -1,0 +1,6 @@
+requests
+pandas
+openpyxl
+geopandas
+psycopg2
+airflow

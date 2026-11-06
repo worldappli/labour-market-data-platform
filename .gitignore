@@ -1,0 +1,53 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+
+# IDE
+.idea/
+.vscode/
+
+# Airflow
+logs/
+airflow/logs/
+
+# Raw source data
+data/raw/
+
+# Processed datasets
+data/processed/*.csv
+data/processed/*.parquet
+data/processed/*.geojson
+data/processed/*.xlsx
+data/processed/*.sql
+
+# Keep QC reports
+!data/processed/*qc_report.json
+!data/processed/geography/
+data/processed/geography/*
+!data/processed/geography/*qc_report.json
+
+# Reference files: temporarily excluded pending licence review
+data/reference/*.xlsx
+
+# Temporary and analytical files
+*.log
+*.tmp
+*.zip
+explain_*.txt
+
+# Credentials
+*.pem
+*.key
+credentials.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Deprecated scripts
+tests/make_explain_sql_old.py

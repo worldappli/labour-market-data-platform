@@ -1,0 +1,41 @@
+{
+  "file": "/opt/airflow/labour-market-dwh/data/processed/eurostat_allemagne.csv",
+  "row_count": 13243,
+  "columns": [
+    "geo",
+    "region",
+    "time",
+    "freq",
+    "isced11",
+    "sex",
+    "age",
+    "unit",
+    "value",
+    "status"
+  ],
+  "missing_required_columns": [],
+  "duplicate_key_count": 0,
+  "duplicate_keys_sample": [],
+  "blank_by_column": {
+    "geo": 0,
+    "region": 0,
+    "time": 0,
+    "freq": 0,
+    "isced11": 0,
+    "sex": 0,
+    "age": 0,
+    "unit": 0,
+    "value": 0,
+    "status": 8973
+  },
+  "invalid_numeric_value_count": 0,
+  "invalid_numeric_value_sample": [],
+  "values_outside_0_100_count": 0,
+  "values_outside_0_100_sample": [],
+  "value_min": 1.1,
+  "value_max": 41.0,
+  "geography_count": 55,
+  "geographies_not_starting_DE": [],
+  "year_min": "1999",
+  "year_max": "2025"
+}

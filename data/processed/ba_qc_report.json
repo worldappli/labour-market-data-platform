@@ -1,0 +1,53 @@
+{
+  "file": "/opt/airflow/labour-market-dwh/data/processed/ba_arbeitslosigkeit.csv",
+  "row_count": 94636,
+  "columns": [
+    "ags",
+    "ba_id",
+    "kreis",
+    "period",
+    "arbeitslose",
+    "unterbeschaeftigung"
+  ],
+  "missing_required_columns": [],
+  "blank_by_column": {
+    "ags": 0,
+    "ba_id": 0,
+    "kreis": 0,
+    "period": 0,
+    "arbeitslose": 0,
+    "unterbeschaeftigung": 14436
+  },
+  "duplicate_key_count": 0,
+  "duplicate_keys_sample": [],
+  "invalid_period_count": 0,
+  "invalid_period_sample": [],
+  "invalid_numeric_count": 0,
+  "invalid_numeric_sample": [],
+  "negative_value_count": 0,
+  "negative_value_sample": [],
+  "missing_values": {
+    "arbeitslose": 0,
+    "unterbeschaeftigung": 14436
+  },
+  "numeric_statistics": {
+    "arbeitslose": {
+      "count": 94636,
+      "min": 650,
+      "max": 279160
+    },
+    "unterbeschaeftigung": {
+      "count": 80200,
+      "min": 900,
+      "max": 355730
+    }
+  },
+  "ags_count": 401,
+  "ba_id_count": 401,
+  "kreis_count": 401,
+  "period_count": 236,
+  "period_min": "2007-01",
+  "period_max": "2026-08",
+  "logical_inconsistency_count": 0,
+  "logical_inconsistency_sample": []
+}

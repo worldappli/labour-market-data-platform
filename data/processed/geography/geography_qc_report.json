@@ -1,0 +1,22 @@
+{
+  "source_file": "DE_VG250.gpkg",
+  "source_layer": "vg250_krs",
+  "source_reference_date": "2025-12-31",
+  "source_crs": "EPSG:25832",
+  "output_crs": "EPSG:4326",
+  "input_feature_count": 433,
+  "input_unique_ags_count": 400,
+  "output_feature_count": 400,
+  "output_unique_ags_count": 400,
+  "invalid_geometries_before_simplification": 0,
+  "empty_geometries_before_simplification": 0,
+  "invalid_geometries_after_simplification": 0,
+  "simplify_tolerance_meters": 100.0,
+  "output_file": "data\\processed\\geography\\germany_kreise.geojson",
+  "output_size_bytes": 3778397,
+  "notes": [
+    "Les géométries sont dissoutes par AGS BKG à 5 chiffres.",
+    "ags_ba_candidate est une clé candidate de jointure (AGS à 5 chiffres + 000), à valider avec la source BA.",
+    "La référence géographique est au 2025-12-31; vérifier les changements territoriaux postérieurs, notamment Hanau."
+  ]
+}

@@ -1,0 +1,9 @@
+Nr | Testfall | Erwartung | Ergebnis | Meldung | Bewertung
+N1 | negativer Wert in Rohdatei (-5) | Abbruch | Exit-Code 1 | ValueError: Transformation interrompue : 1 fichier(s) invalide(s). Les erreurs doivent être corrigées avant de poursuivre le pipeline. | BESTANDEN
+N2 | Text statt Zahl ('abc') | Abbruch | Exit-Code 1 | ValueError: Transformation interrompue : 1 fichier(s) invalide(s). Les erreurs doivent être corrigées avant de poursuivre le pipeline. | BESTANDEN
+N3 | widerspruechliche Doppelwerte (zwei Dateien, Wert +1) | Abbruch | Exit-Code 1 | ValueError: 1 conflit(s) de données détecté(s). Le fichier final a été généré, mais les conflits doivent être analysés. | BESTANDEN
+N4 | identische Doppeldatei (Kontrolle) | kein Abbruch | Exit-Code 0 | Fichiers en erreur     : 0 | BESTANDEN
+N5 | unbekannter Kreis ('Testhausen') | Abbruch | Exit-Code 1 | ValueError: Transformation interrompue : 1 fichier(s) invalide(s). Les erreurs doivent être corrigées avant de poursuivre le pipeline. | BESTANDEN
+N6 | leere Datei | Abbruch | Exit-Code 1 | ValueError: Transformation interrompue : 1 fichier(s) invalide(s). Les erreurs doivent être corrigées avant de poursuivre le pipeline. | BESTANDEN
+N7 | Header-Zeile entfernt | Abbruch | Exit-Code 1 | ValueError: Transformation interrompue : 1 fichier(s) invalide(s). Les erreurs doivent être corrigées avant de poursuivre le pipeline. | BESTANDEN
+N8 | negativer Wert im aufbereiteten CSV (QC-Skript) | meldet, blockiert nicht | Exit-Code 0 | negative_value_count = 1 | BESTANDEN

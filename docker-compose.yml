@@ -1,0 +1,24 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: datawarehouse-postgres
+    restart: unless-stopped
+
+    environment:
+      POSTGRES_DB: ${DW_DATABASE}
+      POSTGRES_USER: ${DW_USER}
+      POSTGRES_PASSWORD: ${DW_PASSWORD}
+
+    ports:
+      - "5433:5432"
+
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./data:/data
+
+volumes:
+  postgres_data:
+
+     #docker network connect superset_default datawarehouse-postgres
+  #docker logs tlctriprecorddata-airflow-1 2>&1 | Select-String -Pattern "username|password|admin|standalone"
+  #docker exec -it datawarehouse-postgres psql -U dataengineer -d datawarehouse
